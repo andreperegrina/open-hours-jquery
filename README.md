@@ -82,4 +82,4 @@ This example will initialize the business hours at **9:30 AM to 8:30 PM** from `
 
 ## License
 
-Apache 2
+ OpenHours for Android is released under the Apache License 2.0. See [LICENSE](https://github.com/andreperegrina/open-hours-jquery/blob/master/LICENSE.md) for details.
