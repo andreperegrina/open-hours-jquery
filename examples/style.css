@@ -1,0 +1,82 @@
+
+html{
+  min-height: 100%;
+  height: auto;
+}
+body {
+  height: 100%;
+  background: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%) no-repeat;
+}
+
+.stars-yellow {
+  color: #fbbb00;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.divider {
+  height: 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+}
+
+.divider-transparent {
+  height: 0;
+  margin: 0 0 .5rem 0;
+  overflow: hidden;
+}
+
+.title-section {
+  padding: 1.25rem 1.25rem 0;
+  margin-bottom: 1.25rem;
+}
+
+.actions {
+  margin: 0.5rem 1.25rem;
+}
+
+.actions .button-action {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.actions .button-action .fas {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.actions .button-action span {
+  display: block;
+}
+
+.place-info {
+}
+
+.info-section {
+  padding: .5rem 1.25rem .5rem;
+}
+
+.info-section:hover {
+  background: rgba(0, 0, 0, .03);
+}
+
+.info-section .col-lg-1 {
+  padding-right: 1.5rem;
+  color: #3d81f7;
+}
+
+.mdc-elevation--z2 {
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.try-this {
+  color: #00aced;
+  position: absolute;
+  right: 10px;
+}
+
+

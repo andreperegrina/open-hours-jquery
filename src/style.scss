@@ -1,0 +1,48 @@
+
+.open-hour {
+  width: 100%;
+  cursor: pointer;
+
+  &.table-visible {
+    .open-hour-table {
+      display: block;
+    }
+    .caret-up {
+      display: inline-block;
+    }
+    .caret-down {
+      display: none;
+    }
+  }
+
+  .open-hour-table, .caret-up {
+    display: none;
+  }
+
+  .caret-up, .caret-down {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    svg {
+      vertical-align: initial;
+      width: 10px;
+
+    }
+  }
+
+  .open-hour-table {
+    .open-hour-day-label {
+      min-width: 100px;
+    }
+    .active {
+      font-weight: bold;
+    }
+  }
+  .open-hour-text {
+    .open {
+      color: #3d81f7;
+    }
+    .closed {
+      color: #db2e1a;
+    }
+  }
+}

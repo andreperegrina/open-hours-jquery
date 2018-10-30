@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../dist/style.min.css">
+</head>
+<body>
+
+<div class="container" style="margin-bottom: 2rem;">
+  <div class="row justify-content-md-center" style="margin-top: 4rem; margin-bottom: 1rem;">
+    <div class="col col-md-auto text-center">
+      <div style="display: flex;align-content: center;justify-items: center;">
+        <a class="navbar-brand" href="https://github.com/andreperegrina"><img src="logo.png" style="height: 35px;"/></a>
+        <h2 class="text-center" style="margin-bottom: 0; display: inline-block; color: white;">Open Hours jQuery</h2>
+      </div>
+      <div>
+        <a class="github-button" href="https://github.com/andreperegrina/open-hours-jquery" data-icon="octicon-star"
+           data-size="large" data-show-count="true"
+           aria-label="Star andreperegrina/open-hours-jquery on GitHub">Star</a>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center justify-content-md-center">
+    <div class="col col-md-auto">
+      <div class="card mdc-elevation--z2" style="width: 25rem;     border: none;">
+        <img class="card-img-top" src="hooters.jpg" alt="Card image cap">
+        <div class="card-body">
+          <div class="title-section">
+
+            <h5 class="card-title">Hooters</h5>
+            <div class="review">
+              <span class="text-muted">4.3</span>
+              <span>
+                            <i class="fas fa-star stars-yellow"></i>
+                            <i class="fas fa-star stars-yellow"></i>
+                            <i class="fas fa-star stars-yellow"></i>
+                            <i class="fas fa-star stars-yellow"></i>
+                            <i class="fas fa-star-half-alt stars-yellow"></i>
+                        </span>
+              <span class="text-muted">(652)</span>
+            </div>
+            <div class="place-type">
+              <span class="text-muted">American restaurant</span>
+            </div>
+          </div>
+          <div class="place-info">
+            <div class="divider"></div>
+            <div class="info-section" id="info-section-business-hours">
+              <div class="row">
+                <div class="col col-lg-1">
+                  <span><i class="far fa-clock"></i></span>
+                </div>
+                <div class="col">
+                  <div id="openHour">
+                    <span class="try-this">Click here!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="info-section">
+              <div class="row">
+                <div class="col col-lg-1">
+                  <span><i class="fas fa-chart-line"></i></span>
+                </div>
+                <div class="col">
+                  <span>You visited this place a year ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="divider-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="../dist/open-hours-jquery.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+  var openHour;
+  $(document).ready(function () {
+    openHour = $('#openHour').openhours({
+      days: [
+        {
+          label: 'Sunday',
+          start: undefined,
+          end: undefined
+        },
+        {
+          label: 'Monday',
+          start: new Date(2018, 11, 24, 9, 30, 0),
+          end: new Date(2018, 11, 24, 20, 30, 0)
+        },
+        {
+          label: 'Tuesday',
+          start: new Date(2018, 11, 24, 9, 30, 0),
+          end: new Date(2018, 11, 24, 20, 30, 0)
+        },
+        {
+          label: 'Wednesday',
+          start: new Date(2018, 11, 24, 9, 30, 0),
+          end: new Date(2018, 11, 24, 20, 30, 0)
+        },
+        {
+          label: 'Thursday',
+          start: new Date(2018, 11, 24, 9, 30, 0),
+          end: new Date(2018, 11, 24, 20, 30, 0)
+        },
+        {
+          label: 'Friday',
+          start: new Date(2018, 11, 24, 9, 30, 0),
+          end: new Date(2018, 11, 24, 20, 30, 0)
+        },
+        {
+          label: 'Saturday',
+          start: new Date(2018, 11, 24, 9, 30, 0),
+          end: new Date(2018, 11, 24, 20, 30, 0)
+        }]
+    });
+    $('#info-section-business-hours').on('click', function () {
+      openHour.toogle();
+    });
+  });
+</script>
+</body>
+</html>
